@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+$grey-100: #e5e5e5;
+$white: #ffffff;
+$grey-200: #efefef;
+$grey-300: #e0e0e0;
+$grey-400: #c4c4c4;
+$pink-400: #f13c6e;
+$pink-500: #f50057;
+$black: #000000;
+$grey-600: #828282;
+$grey-800: #333333;
+
+$fs-h1: 48px;
+$fs-h2: 36px;
+$fs-h3: 24px;
+$fs-h4: 21px;
+$fs-h5: 18px;
+$fs-h6: 16px;
+$fs-txt-lg: 16px;
+$fs-txt-md: 14px;
+$fs-txt-sm: 12px;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+
+.container {
+  max-width: calc(1110px + 20px * 2);
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  &-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.br-bottom-grey-200 {
+  border-bottom: 1px solid $grey-200;
+}
+
+.logo {
+  max-width: 80px;
+  width: 100%;
+}
+
+.link-black {
+  color: $black;
+}
+
+.btn {
+  border-radius: 40px;
+  cursor: pointer;
+  &-border-pink-400 {
+    padding: 12px 52px;
+    border: 2px solid $pink-400;
+    background-color: $white;
+    color: $black;
+  }
+  &-txt {
+    font-weight: $fw-400;
+    font-size: $fs-txt-md;
+    line-height: 16px;
+    text-align: center;
+  }
+  &-border-white {
+    border: 2px solid $white;
+    background-color: $pink-400;
+    color: $white;
+  }
+  &-card {
+    padding: 9px 52px;
+    letter-spacing: 0.05em;
+  }
+  &-pink {
+    background-color: $pink-400;
+    color: $white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.card {
+  &-wrap {
+    padding-bottom: 80px;
+    gap: 30px;
+  }
+  &-logo {
+    display: inline-block;
+    padding: 25px 30px;
+    background-color: $white;
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+  }
+  &-img {
+    padding-bottom: 20px;
+  }
+}
+
+.input {
+  border: none;
+  border-radius: 30px;
+  background-color: $white;
+  max-width: 225px;
+  padding: 9px 35px;
+  width: 100%;
+}
+.input::placeholder {
+  color: $grey-400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.img-logo {
+  width: 100%;
+}
+
+.circle-logo {
+  width: 45px;
+  height: 45px;
+  border: 2px solid $pink-400;
+  border-radius: 50%;
+}
